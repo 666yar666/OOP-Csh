@@ -1,0 +1,11 @@
+--- Результат операції ---
+C# DOESN'T JUST AGE; IT MATURES WITH EVERY NEW VERSION.
+FROM LINQ TO RECORDS AND PATTERN MATCHING, IT KEEPS GETTING SHARPER.
+STAY CURIOUS, KEEP CODING, AND LET THE COMPILER DO THE HEAVY LIFTING.
+
+--- Результат операції ---
+Кількість символів: 194
+
+--- Результат операції ---
+Кількість слів: 33
+
