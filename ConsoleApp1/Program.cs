@@ -1,45 +1,60 @@
-﻿using System.IO;
-using System;
+﻿using System;
+using System.IO;
 
-namespace task1
+namespace Task2
 {
-    public delegate string TextOperation(string input);
-    
-    class Programm
+    public class MessageEventArgs : EventArgs
+    {
+        public string Message { get; set; }
+        public MessageEventArgs(string message)
+        {
+            Message = message;
+        }
+    }
+
+    public class MessagePublisher
+    {
+        public event EventHandler<MessageEventArgs> MessageSent;
+
+        public void Send(string message)
+        {
+            MessageSent?.Invoke(this, new MessageEventArgs(message));
+        }
+    }
+
+    public class FileLogger
+    {
+        private string _filePath = "logPD25.txt";
+
+        public void HandleMessageSent(object sender, MessageEventArgs e)
+        {
+            string logEntry = $"[{DateTime.Now:HH:mm:ss}] {e.Message}";
+            using (StreamWriter sw = new StreamWriter(_filePath, true))
+            {
+                sw.WriteLine(logEntry);
+            }
+        }
+    }
+
+    class Program
     {
         static void Main()
         {
-            string inputFile = "textPD25.txt";
-            string outputFile = "resultPD25.txt"; 
+            MessagePublisher publisher = new MessagePublisher();
+            FileLogger logger = new FileLogger();
 
-            File.WriteAllText(outputFile, "");
+            publisher.MessageSent += logger.HandleMessageSent;
 
-            if (!File.Exists(inputFile)) 
+            Console.WriteLine("Введіть текст 4 рази:");
+
+            for (int i = 0; i < 4; i++)
             {
-                File.WriteAllText(inputFile, "C# is awesome. Good luck on the exam.");
+                Console.Write($"Ввід {i + 1}: ");
+                string input = Console.ReadLine();
+                publisher.Send(input);
             }
 
-            ProcessFile(inputFile, outputFile, text => text.ToUpper());
-            ProcessFile(inputFile, outputFile, text => $"Кількість символів: {text.Length}");
-            ProcessFile(inputFile, outputFile, text => 
-            {
-                int wordCount = text.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Length;
-                return $"Кількість слів: {wordCount}";
-            });
-            
-            Console.WriteLine("Успішно, результат записаний в файл resultPD25.txt"); 
-        } 
-
-        static void ProcessFile(string inputFilePath, string outputFilePath, TextOperation operation)
-        {
-            string text = File.ReadAllText(inputFilePath);
-            string result = operation(text);  
-            using (StreamWriter sw = new StreamWriter(outputFilePath, true))
-            {
-                sw.WriteLine("--- Результат операції ---");
-                sw.WriteLine(result);
-                sw.WriteLine();
-            }
+            Console.WriteLine("Завдання 2 виконано. Перевірте файл logPD25.txt");
         }
-    } 
-} 
+    }
+}
