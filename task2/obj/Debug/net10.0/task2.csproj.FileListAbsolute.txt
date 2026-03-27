@@ -1,0 +1,14 @@
+D:\OOPCsh\task2\bin\Debug\net10.0\task2.exe
+D:\OOPCsh\task2\bin\Debug\net10.0\task2.deps.json
+D:\OOPCsh\task2\bin\Debug\net10.0\task2.runtimeconfig.json
+D:\OOPCsh\task2\bin\Debug\net10.0\task2.dll
+D:\OOPCsh\task2\bin\Debug\net10.0\task2.pdb
+D:\OOPCsh\task2\obj\Debug\net10.0\task2.GeneratedMSBuildEditorConfig.editorconfig
+D:\OOPCsh\task2\obj\Debug\net10.0\task2.AssemblyInfoInputs.cache
+D:\OOPCsh\task2\obj\Debug\net10.0\task2.AssemblyInfo.cs
+D:\OOPCsh\task2\obj\Debug\net10.0\task2.csproj.CoreCompileInputs.cache
+D:\OOPCsh\task2\obj\Debug\net10.0\task2.dll
+D:\OOPCsh\task2\obj\Debug\net10.0\refint\task2.dll
+D:\OOPCsh\task2\obj\Debug\net10.0\task2.pdb
+D:\OOPCsh\task2\obj\Debug\net10.0\task2.genruntimeconfig.cache
+D:\OOPCsh\task2\obj\Debug\net10.0\ref\task2.dll
