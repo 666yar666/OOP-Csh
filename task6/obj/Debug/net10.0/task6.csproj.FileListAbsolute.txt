@@ -1,0 +1,14 @@
+D:\OOPCsh\task6\bin\Debug\net10.0\task6.exe
+D:\OOPCsh\task6\bin\Debug\net10.0\task6.deps.json
+D:\OOPCsh\task6\bin\Debug\net10.0\task6.runtimeconfig.json
+D:\OOPCsh\task6\bin\Debug\net10.0\task6.dll
+D:\OOPCsh\task6\bin\Debug\net10.0\task6.pdb
+D:\OOPCsh\task6\obj\Debug\net10.0\task6.GeneratedMSBuildEditorConfig.editorconfig
+D:\OOPCsh\task6\obj\Debug\net10.0\task6.AssemblyInfoInputs.cache
+D:\OOPCsh\task6\obj\Debug\net10.0\task6.AssemblyInfo.cs
+D:\OOPCsh\task6\obj\Debug\net10.0\task6.csproj.CoreCompileInputs.cache
+D:\OOPCsh\task6\obj\Debug\net10.0\task6.dll
+D:\OOPCsh\task6\obj\Debug\net10.0\refint\task6.dll
+D:\OOPCsh\task6\obj\Debug\net10.0\task6.pdb
+D:\OOPCsh\task6\obj\Debug\net10.0\task6.genruntimeconfig.cache
+D:\OOPCsh\task6\obj\Debug\net10.0\ref\task6.dll
